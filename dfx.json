@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "dfx": "0.11.2",
+  "canisters": {
+    "cross_canister_package_import_backend": {
+      "type": "rust",
+      "package": "cross_canister_package_import_backend",
+      "candid": "src/cross_canister_package_import_backend/cross_canister_package_import_backend.did"
+    },
+    "cross_canister_package_import_frontend": {
+      "type": "assets",
+      "source": [
+        "src/cross_canister_package_import_frontend/assets"
+      ],
+      "dependencies": [
+        "cross_canister_package_import_backend"
+      ]
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  }
+}
