@@ -1,4 +1,2 @@
 [workspace]
-members = [
-    "src/cross_canister_package_import_backend",
-]
+members = ["src/callee", "src/caller", "src/utils"]
