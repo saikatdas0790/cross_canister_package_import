@@ -2,8 +2,8 @@ use candid::{CandidType, Deserialize};
 
 #[derive(Deserialize, CandidType)]
 pub struct UserDetails {
-    name: String,
-    power: u32,
+    pub name: String,
+    pub power: u32,
 }
 
 #[ic_cdk_macros::query]

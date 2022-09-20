@@ -1,5 +1,6 @@
 // use candid::Principal;
 // use ic_cdk::api::call;
+use callee::UserDetails;
 
 #[ic_cdk_macros::update]
 #[candid::candid_method(update)]
@@ -17,7 +18,7 @@ fn greet() {
     //     "greet",
     //     (UserDetails {
     //         name: "Saikat".to_string(),
-    //         age: 100,
+    //         power: 100,
     //     },),
     // )
 }
